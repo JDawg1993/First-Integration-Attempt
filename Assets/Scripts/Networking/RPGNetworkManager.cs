@@ -9,4 +9,10 @@ public class RPGNetworkManager : NetworkManager
     {
         base.OnClientConnect();
     }
+
+    public override void OnServerAddPlayer(NetworkConnectionToClient conn)
+    {
+        base.OnServerAddPlayer(conn);
+        
+    }
 }

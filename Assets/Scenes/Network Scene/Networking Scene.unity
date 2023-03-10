@@ -401,6 +401,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5522755083978307757, guid: 8c1b744652ffb15499305d9a7e151742,
+        type: 3}
+      propertyPath: onlineScene
+      value: Assets/Scenes/TestScenes/Testing_Scene.unity
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

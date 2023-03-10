@@ -1,21 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
+using Mirror;
 using UnityEngine;
 
-public abstract class StateMachine : MonoBehaviour
+public abstract class RPGStateMachine : NetworkBehaviour
 {
+    private RPGState currentState;
 
-    private State currentState;
 
-
-    public void SwitchState(State newState)
+    public void SwitchState(RPGState newState)
     {
         currentState?.Exit();
         currentState = newState;
         currentState?.Enter();
     }
 
-    private void Update() 
+    private void Update()
     {
         currentState?.Tick(Time.deltaTime);
     }
