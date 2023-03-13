@@ -8,6 +8,7 @@ public abstract class RPGState
     public abstract void Tick(float deltaTime);
     public abstract void Exit();
 
+
     protected float GetNormalizedTime(Animator animator, string tag)
     {
         AnimatorStateInfo currentInfo = animator.GetCurrentAnimatorStateInfo(0);

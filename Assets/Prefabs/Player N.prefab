@@ -942,9 +942,21 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0.1
+  <InputReader>k__BackingField: {fileID: 8402091278387236227}
   <CharacterController>k__BackingField: {fileID: 3063092886379436811}
+  <Animator>k__BackingField: {fileID: 5466045383717695415}
+  <Targeter>k__BackingField: {fileID: 6508998204320119181}
   <ForceReceiver>k__BackingField: {fileID: 8462540595226553756}
-  <Targeter>k__BackingField: {fileID: 0}
+  <Weapon>k__BackingField: {fileID: 5573461937335958974}
+  <Health>k__BackingField: {fileID: 1495726902316324646}
+  <Ragdoll>k__BackingField: {fileID: 7246422863997641856}
+  <LedgeDetector>k__BackingField: {fileID: 7701229581960631662}
+  <FreeLookMovementSpeed>k__BackingField: 0
+  <TargetingMovementSpeed>k__BackingField: 0
+  <RotationDamping>k__BackingField: 0
+  <JumpForce>k__BackingField: 0
+  <DodgeDuration>k__BackingField: 0
+  <DodgeDistance>k__BackingField: 0
 --- !u!114 &1596658516985468043
 MonoBehaviour:
   m_ObjectHideFlags: 0

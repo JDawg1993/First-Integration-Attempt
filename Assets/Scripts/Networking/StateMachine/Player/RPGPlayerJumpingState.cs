@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RPGPlayerFreeLookState : RPGPlayerBaseState
+public class RPGPlayerJumpingState : RPGPlayerBaseState
 {
-    public RPGPlayerFreeLookState(RPGPlayerStateMachine rpgStateMachine) : base(rpgStateMachine)
+    public RPGPlayerJumpingState(RPGPlayerStateMachine rpgStateMachine) : base(rpgStateMachine)
     {
     }
 

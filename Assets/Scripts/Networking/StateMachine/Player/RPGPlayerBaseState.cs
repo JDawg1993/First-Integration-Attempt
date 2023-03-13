@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Mirror;
 using UnityEngine;
 
 public abstract class RPGPlayerBaseState : RPGState
@@ -11,13 +12,13 @@ public abstract class RPGPlayerBaseState : RPGState
     {
         this.rpgStateMachine = rpgStateMachine;
     }
-
-    protected void Move(float deltaTime)
+    [Command]
+    protected void CmdMove(float deltaTime)
     {
-        Move(Vector3.zero, deltaTime);
+        CmdMove(Vector3.zero, deltaTime);
     }
-
-    protected void Move(Vector3 motion, float deltaTime)
+    [Command]
+    protected void CmdMove(Vector3 motion, float deltaTime)
     {
         rpgStateMachine.CharacterController.Move((motion + rpgStateMachine.ForceReceiver.Movement) * deltaTime);
     }
@@ -31,15 +32,15 @@ public abstract class RPGPlayerBaseState : RPGState
         rpgStateMachine.transform.rotation = Quaternion.LookRotation(lookPos);
     }
 
-    // protected void ReturnToLocomotion()
-    // {
-    //     if (rpgStateMachine.Targeter.CurrentTarget != null)
-    //     {
-    //         rpgStateMachine.SwitchState(new RPGPlayerTargetingState(rpgStateMachine));
-    //     }
-    //     else
-    //     {
-    //         rpgStateMachine.SwitchState(new RPGPlayerFreeLookState(rpgStateMachine));
-    //     }
-    // }
+    protected void ReturnToLocomotion()
+    {
+        if (rpgStateMachine.Targeter.CurrentTarget != null)
+        {
+            rpgStateMachine.SwitchState(new RPGPlayerTargetingState(rpgStateMachine));
+        }
+        else
+        {
+            rpgStateMachine.SwitchState(new RPGPlayerFreeLookState(rpgStateMachine));
+        }
+    }
 }
