@@ -13,6 +13,7 @@ public class RPGPlayerStateMachine : RPGStateMachine
     [field: SerializeField] public Health Health { get; private set; }
     [field: SerializeField] public Ragdoll Ragdoll { get; private set; }
     [field: SerializeField] public LedgeDetector LedgeDetector { get; private set; }
+    [field: SerializeField] public Attack[] Attacks { get; private set; }
 
     [field: SerializeField] public float FreeLookMovementSpeed { get; private set; }
     [field: SerializeField] public float TargetingMovementSpeed { get; private set; }
@@ -39,6 +40,7 @@ public class RPGPlayerStateMachine : RPGStateMachine
         Health.OnTakeDamage += HandleTakeDamage;
         Health.OnDie += HandleDeath;
     }
+
     private void OnDisable()
     {
         Health.OnTakeDamage -= HandleTakeDamage;

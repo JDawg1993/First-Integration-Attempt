@@ -406,6 +406,23 @@ PrefabInstance:
       propertyPath: onlineScene
       value: Assets/Scenes/TestScenes/Testing_Scene.unity
       objectReference: {fileID: 0}
+    - target: {fileID: 5522755083978307757, guid: 8c1b744652ffb15499305d9a7e151742,
+        type: 3}
+      propertyPath: playerPrefab
+      value: 
+      objectReference: {fileID: 7711189235075117523, guid: 011ccb60d003ff043bce1ecadeed4580,
+        type: 3}
+    - target: {fileID: 5522755083978307757, guid: 8c1b744652ffb15499305d9a7e151742,
+        type: 3}
+      propertyPath: spawnPrefabs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522755083978307757, guid: 8c1b744652ffb15499305d9a7e151742,
+        type: 3}
+      propertyPath: spawnPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 1833404201754693020, guid: 5f54a5b142e4e2b4dbf03a63a80c3fb5,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
